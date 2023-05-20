@@ -1,0 +1,6 @@
+string1 = input("First word: ")
+string2 = input("Second word: ")
+numb1 = float(input("First number: "))
+numb2 = float(input("Second number: "))
+print(string1+string2)
+print(numb1*numb2)

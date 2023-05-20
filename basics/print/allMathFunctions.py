@@ -1,0 +1,7 @@
+print("3 to the power of 4 is",3**4)
+print("3 times 4 is",3*4)
+print("3 divided by 4 is",3/4)
+print("3 integer divided by 4 is",3//4)
+print("something something remainder",3%4)
+print("3 plus 4 is",3+4)
+print("3 minus 4 is,",3-4)
