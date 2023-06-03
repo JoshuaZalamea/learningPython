@@ -1,7 +1,8 @@
 def get_questions():
     return [["What is the name of Josh's dog? ", "Sadie"],
             ["What is 2+2? ", "4"],
-            ["What's at the edge of the ocean? ","beach"]]
+            ["What's at the edge of the ocean? ","beach"],
+            ["Dogs or cats? ", "dogs"]]
 
 def check_question(question_and_answer):
     question = question_and_answer[0]
@@ -27,4 +28,33 @@ def run_test(questions):
     print("You got", right * 100 / len(questions),\
             "% right out of", len(questions))
 
-run_test(get_questions())
+def answer_key(questions):
+    index = 0
+    while index < len(questions):
+        print(" ")
+        print(questions[0])
+        print(questions[1])
+        print(questions[2])
+        print(questions[3])
+        return
+
+choice = None
+
+while choice != "q":
+    print(" ")
+    print("Select an option from the following list:")
+    print(" 't' for test")
+    print(" 'k' for answer key")
+    print(" 'q' for quit")
+    print(" ")
+    choice = input("Enter here: ")
+    if choice == "t":
+        print(" ")
+        run_test(get_questions())
+    if choice == "k":
+        print(" ")
+        answer_key(get_questions())
+    if choice == "q":
+        print(" ")
+        print("Quitting...")
+        break
