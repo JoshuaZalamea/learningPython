@@ -72,6 +72,8 @@ if playerHP <= 0:
 else:
     print(" ")
 
+# death options
+
 if death == 3:
     print("Congratulations! YOU defeated the TROLL!")
 if death == 0:
