@@ -1,6 +1,6 @@
 import random
 
-number = random.randint(1,50)
+number = random.randint(0,99)
 guess = -1
 attempts = 0
 
